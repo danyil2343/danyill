@@ -1,19 +1,68 @@
-body { 
-  background-color: #f4d04e; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  min-height: 100vh; 
-  margin: 0; 
+/* Базові налаштування фону */
+body {
+    background-color: #f4d04e; /* Жовтий колір за дизайном */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.card { 
-  background: white; 
-  max-width: 350px; 
-  padding: 24px; 
-  border: 1px solid #000; 
-  border-radius: 20px; 
-  box-shadow: 8px 8px 0px 0px #000; 
+
+/* Основна картка */
+.card {
+    background: white;
+    max-width: 350px; /* Фіксована ширина [cite: 93] */
+    padding: 24px;
+    border: 1px solid #111;
+    border-radius: 20px; /* Закруглені кути [cite: 94] */
+    box-shadow: 8px 8px 0px 0px #000; /* Чорна тінь [cite: 95] */
 }
-.card__img { width: 100%; border-radius: 10px; }
-.card__category { background: #f4d04e; font-weight: bold; padding: 4px 12px; border-radius: 4px; display: inline-block; margin: 15px 0; }
-.card__avatar { width: 32px; vertical-align: middle; margin-right: 10px; }
+
+/* Стилі для контенту всередині */
+.card__img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card__category {
+    background-color: #f4d04e;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.card__date {
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.card__title {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.card__title:hover {
+    color: #f4d04e; /* Ефект при наведенні */
+}
+
+.card__description {
+    color: #7f7f7f;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card__author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card__avatar {
+    width: 32px;
+    height: 32px;
+}
